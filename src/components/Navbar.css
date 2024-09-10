@@ -1,0 +1,106 @@
+/* src/components/Navbar.css */
+
+/* Existing navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a1a; /* Dark background color */
+}
+
+.logo-image {
+  height: 80px; /* Adjust the height as needed */
+  width: auto;  /* Maintains aspect ratio */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  background-color: #3f48fe;
+  color: #fff;
+  border-bottom: #fff solid 1px;
+}
+
+.info-text {
+  font-size: 0.9em; /* Adjust font size */
+}
+
+.info-phone {
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon {
+  height: 20px; /* Adjust size of the phone icon */
+  margin-right: 8px; /* Space between icon and phone number */
+}
+
+.phone-number {
+  color: #fff; /* White text color for phone number */
+  text-decoration: none; /* Remove underline */
+}
+
+
+/* (tablets) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .logo-image {
+    height: 50px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 0.9em;
+  }
+}
+
+/* (mobile devices) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-image {
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px; 
+    padding: 0; 
+  }
+
+  .nav-links a {
+    font-size: 1em;
+  }
+
+  .info-bar {
+    display: none;
+  }
+}
