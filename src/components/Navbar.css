@@ -1,17 +1,14 @@
-/* src/components/Navbar.css */
-
-/* Existing navbar styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #1a1a1a; /* Dark background color */
+  background-color: #1a1a1a;
 }
 
 .logo-image {
-  height: 80px; /* Adjust the height as needed */
-  width: auto;  /* Maintains aspect ratio */
+  height: 80px;
+  width: auto;
 }
 
 .nav-links {
@@ -35,13 +32,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 60px;
-  background-color: #3f48fe;
+  background-color: #fd6503;
   color: #fff;
   border-bottom: #fff solid 1px;
 }
 
 .info-text {
-  font-size: 0.9em; /* Adjust font size */
+  font-size: 0.9em;
 }
 
 .info-phone {
@@ -50,13 +47,13 @@
 }
 
 .phone-icon {
-  height: 20px; /* Adjust size of the phone icon */
-  margin-right: 8px; /* Space between icon and phone number */
+  height: 25px;
+  margin-right: 20px;
 }
 
 .phone-number {
-  color: #fff; /* White text color for phone number */
-  text-decoration: none; /* Remove underline */
+  color: #fff;
+  text-decoration: none;
 }
 
 
