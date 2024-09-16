@@ -1,10 +1,10 @@
 import React from 'react';
-import Hero from './Hero';
+import HeaderSm from '../headerSm/HeaderSm';
 
 const About = () => {
   return (
     <div className='main-container'>
-      <Hero title="About Us" /> 
+      <HeaderSm title="About Us" /> 
     </div>
   );
 };
