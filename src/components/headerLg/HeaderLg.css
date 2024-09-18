@@ -1,0 +1,71 @@
+.slant-box-container {
+  width: 100vw;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+}
+
+.box-inner {
+  width: 33.3%;
+}
+
+.box-1 {
+  background-color: #797979;
+}
+
+.box-2 {
+  background-color: #2c2c2c;
+}
+
+.box-3 {
+  background-color: #6bdb20;
+}
+
+.box-title {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+/* Large devices  */
+@media only screen and (min-width: 1280px) {
+
+  .slant-box-container  {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .box-1 {
+    width: 25vw;
+  }
+
+  .box-2 {
+    width: 25vw;
+    margin-left: -65px;
+    transform: skew(-17deg);
+  }
+
+  .box-2 > .box-title {
+    transform: skew(17deg);
+  }
+
+  .box-3 {
+    width: 25vw;
+    transform: skew(-17deg);
+  }
+
+  .box-3 > .box-title {
+    transform: skew(17deg);
+  }
+}
+
+/* (tablets) */
+@media (max-width: 768px) {
+
+}
+
+/* (mobile devices) */
+@media (max-width: 480px) {
+  .slant-box-container {
+
+  }
+}
