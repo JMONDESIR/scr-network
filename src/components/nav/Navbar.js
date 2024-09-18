@@ -27,6 +27,7 @@ const Navbar = () => {
           &#9776; {/* Unicode for hamburger icon */}
         </button>
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+          <li><Link to="/" onClick={closeMenu}>Home</Link></li>
           <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
           <li><Link to="/about" onClick={closeMenu}>About</Link></li>
           <li><Link to="/client_area" onClick={closeMenu}>Client Area</Link></li>

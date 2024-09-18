@@ -1,14 +1,16 @@
 import React from 'react';
-import HeaderSm from '../headerSm/HeaderSm';
-import ServiceImg from '../../assets/network_I.jpg'
+import Banner from '../banner/Banner';
+import ServicesImg from '../../assets/services.jpg'; 
 
 const Services = () => {
+
   return (
     <div className='main-container'>
-      <HeaderSm title="Services" />
-      <div className='service-carousel'>
-        
-      </div>
+      <Banner 
+        title="Services" 
+        image={ServicesImg}
+        altText="Services"
+      />
     </div>
   );
 };

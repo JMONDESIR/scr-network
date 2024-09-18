@@ -1,10 +1,15 @@
 import React from 'react';
-import HeaderSm from '../headerSm/HeaderSm';
+import Banner from '../banner/Banner';
+import ContactImg from '../../assets/contact.jpg'; 
 
 const Contact = () => {
   return (
-    <div className="main-container">
-      <HeaderSm title="Contact Us" />
+    <div className='main-container'>
+      <Banner 
+        title="Contact" 
+        image={ContactImg}
+        altText="Contact Us"
+      />
     </div>
   );
 };

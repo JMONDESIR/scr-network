@@ -1,12 +1,18 @@
 import React from 'react';
-import HeaderSm from '../headerSm/HeaderSm';
+import Banner from '../banner/Banner';
+import AboutImg from '../../assets/about.jpg'; 
 
 const About = () => {
   return (
     <div className='main-container'>
-      <HeaderSm title="About Us" /> 
+      <Banner 
+        title="About SCR" 
+        image={AboutImg}
+        altText="About SCR"
+      />
     </div>
   );
 };
 
 export default About;
+
