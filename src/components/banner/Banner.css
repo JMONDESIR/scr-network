@@ -1,4 +1,5 @@
 .banner-container {
+  margin-top: 0;
   width: 100%;
   height: 450px;
   position: relative;
@@ -7,12 +8,25 @@
   background-repeat: no-repeat;
 }
 
-.banner-polygon {
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center; 
+  opacity: 0.3;
   z-index: 1;
-  clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+}
+
+.banner-polygon {
+  z-index: 0;
+  transform: skew(-17deg);
+  margin-left: -9%;
   background: rgb(10, 78, 214);
   background: linear-gradient(135deg, rgba(22,22,247,1) 0%, rgba(51,51,240,1) 30%, rgba(107,107,237,1) 86%, rgba(107,107,237,1) 100%);
-  width: 33.3%;
+  width: 40.3%;
   height: 500px;
   display: flex;
   justify-content: center;
@@ -23,5 +37,7 @@
   text-transform: uppercase;
   margin-top: 7vh;
   font-size: 40px;
-}
+  transform: skew(17deg);
+  padding-left: 10%;
 
+}

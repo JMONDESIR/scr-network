@@ -1,0 +1,43 @@
+.dynamic-text {
+  font-size: 16px;
+  z-index: 1;
+  text-align: justify;
+  line-height: 2;
+  padding-right: 5%;
+}
+
+.textbox {
+  margin: 5% 20px;
+  padding: 0;
+  z-index: 1;
+}
+
+.textbox-polygon {
+  margin-left: 60%;
+  border-left: 1px solid rgba(188, 188, 188, 0.651);
+  transform: skew(-17deg);
+  width: 66.3%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+/*
+@media (max-width: 930px) {
+    .banner-polygon {
+      display: none;
+    }
+
+    .dynamic-textbox {
+      margin: 5% 10%;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .dynamic-textbox {
+      margin: 3% 5%;
+      font-size: 14px;
+    }
+  }
+    */
