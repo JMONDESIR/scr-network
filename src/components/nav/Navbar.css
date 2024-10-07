@@ -1,5 +1,5 @@
-/* Navbar Styling */
 .navbar {
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.logo-image {
+.homepage-link {
   height: 80px;
   width: auto;
 }
@@ -35,13 +35,12 @@
   display: none;
 }
 
-/* Info Bar Styling */
 .info-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 60px;
-  background-color: #272727;
+  background-color: #333;
   color: #fff;
 }
 
@@ -67,11 +66,12 @@
 /* (tablets) */
 @media (max-width: 768px) {
   .navbar {
-    padding: 15px;
+    height: 50px;
+    padding: 10px;
   }
 
-  .logo-image {
-    height: 50px;
+  .homepage-link {
+    height: 40px;
   }
 
   .nav-links {
@@ -84,12 +84,12 @@
 }
 
 /* (mobile devices) */
-@media (max-width: 480px) {
+@media (max-width: 568px) {
   .navbar {
-    
+    z-index: 1;
     flex-direction: row;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
   }
 
   .logo-image {
@@ -134,4 +134,8 @@
   .info-bar {
     display: none;
   }
+}
+
+@media (max-width: 480px) {
+
 }

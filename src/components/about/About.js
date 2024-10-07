@@ -38,22 +38,14 @@ const About = () => {
   return (
     <div className='about-container'>             
       <Banner 
-        title="About SCR"
+        title="About Us"
         image={Aboutimg}
         altText="About us"
         />
         <DynamicTextbox 
           text={Text}
         />
-      <iframe 
-        className="about-video" 
-        src="https://www.youtube.com/embed/LDmHtCiKPjU?si=-yG2qksynJAlk76a"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-      </iframe> 
+
     </div>
   );
 };

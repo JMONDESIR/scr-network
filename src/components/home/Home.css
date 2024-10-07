@@ -1,11 +1,48 @@
-.home_container {
+.home-container {
   width: 100%;
+  position: relative;
+  max-width: 100%;
   height: 100%;
   position: relative;
 }
 
-.home_img {
+.home-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.mid-box {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+
+.mid-box-polygon {
+  width: 50.4%;
+  height: auto;
+  transform: skew(-17deg);
+  margin-left: 14%;
+  padding: 10% 0px;
+  background-color: rgba(244, 244, 244, 0.475);
+  border-left: solid 1px rgb(199, 199, 199, 0.5);
+}
+
+.about-video {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.home-video, .home-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .home-video, .home-img {
+    width: 100%;
+    height: auto;
+  }
 }

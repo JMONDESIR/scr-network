@@ -12,9 +12,9 @@ const Banner = ({ title, image, altText }) => {
   >
   </div>
   <div className="banner-polygon">
-    <h2 className="banner-sm-title">{title}</h2>
-    
+  <h2 className="banner-sm-title">{title}</h2>
   </div>
+
 </div>
   );
 };
