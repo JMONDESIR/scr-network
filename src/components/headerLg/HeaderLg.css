@@ -1,6 +1,6 @@
 .slant-box-container {
   width: 100vw;
-  height: 420px;
+  height: 300px;
   display: flex;
   justify-content: center;
 }
@@ -9,12 +9,22 @@
   width: 33.3%;
 }
 
+.box-text-cont {
+  width: 90%;
+}
+
+.box-text-cont > p {
+  color: white;
+  padding: 4%;
+  justify-content: center;
+}
+
 .box-1 {
   background-color: #797979;
 }
 
 .box-2 {
-  background-color: #2c2c2c;
+  background-color: #333;
 }
 
 .box-3 {
@@ -22,12 +32,18 @@
 }
 
 .box-title {
+  padding-left: 6%;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
 
-/* Large devices  */
-@media only screen and (min-width: 1280px) {
+.box-desc {
+  width: 80%;
+  margin-left: 2%;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 1200px) {
 
   .slant-box-container  {
     display: flex;
@@ -44,26 +60,20 @@
     transform: skew(-17deg);
   }
 
-  .box-2 > .box-title {
-    transform: skew(17deg);
-  }
-
   .box-3 {
     width: 25vw;
     transform: skew(-17deg);
   }
 
-  .box-3 > .box-title {
+  .box-2 > *, .box-3 > * {
     transform: skew(17deg);
   }
 }
 
-/* (tablets) */
 @media (max-width: 768px) {
 
 }
 
-/* (mobile devices) */
 @media (max-width: 480px) {
   .slant-box-container {
 

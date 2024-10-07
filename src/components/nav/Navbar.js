@@ -20,7 +20,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="logo">
           <a href="/">
-            <img src={logo} alt="IT Services Logo" className="logo-image" />
+            <img src={logo} alt="IT Services Logo" className="homepage-link" />
           </a>
         </div>
         <button className="hamburger-menu" aria-label="Toggle navigation" onClick={toggleMenu}>
@@ -30,7 +30,7 @@ const Navbar = () => {
           <li><Link to="/" onClick={closeMenu}>Home</Link></li>
           <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
           <li><Link to="/about" onClick={closeMenu}>About</Link></li>
-          <li><Link to="/client_area" onClick={closeMenu}>Client Area</Link></li>
+          <li><Link to="/clients" onClick={closeMenu}>Client Area</Link></li>
           <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
         </ul>
       </nav>

@@ -1,0 +1,38 @@
+.textbox {
+  margin: 4% 3%;
+  position: relative;
+  padding: 20px;
+  font-size: 18px;
+  z-index: 1;
+  color: #333;
+  text-align: justify;
+}
+
+.textbox-polygon {
+  margin-left: 20%;
+  transform: skew(-17deg);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #6bdb2015;
+  z-index: -1;
+}
+
+@media (max-width: 930px) {
+    .textbox {
+      margin: 2%;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .dynamic-textbox {
+      margin: 3% 5%;
+      font-size: 14px;
+    }
+  }
+
