@@ -1,33 +1,117 @@
 .footer {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 60%;
-  height: 100px;
-  margin-left: 40vw;
-  transform: skew(-17deg);
+  margin: 4% 3%;
+  position: relative;
+  padding: 20px;
+  font-size: 18px;
+  z-index: 1;
+  color: #333;
+  text-align: justify;
 }
 
-.footer > span {
+.footer-polygon {
+  background-color: #fc6602ac;
+  margin-left: 65%;
+  transform: skew(-25deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  position: relative;
+  padding-left: 10%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+  z-index: 2;
+  border-radius: 12px 0 0 2px;
+}
+
+.footer-polygon-box {
+  transform: skew(25deg);
   color: white;
 }
 
-.footer-box-1 {
-  background-color: #797979;
+.footer-polygon-box p {
+  line-height: 1.5;
+  text-decoration: solid;
+}
+
+.footer-background {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background-color: #f3f3f36d;
+  z-index: 1;
+}
+
+.footer-button {
+  margin: 5px;
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #b0f280;
+  background: linear-gradient(to bottom, rgba(176,242,128,1) 0%, rgba(186,230,154,1) 40%, rgba(107,219,32,1) 51%, rgba(115,194,58,1) 71%, rgba(107,219,32,1) 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border: none;
+}
+
+.footer-button:hover {
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+h2 {
+  margin: 15px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-content {
+  margin: 10 12px 0;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 40%;
+  gap: 10px;
+}
+
+.id-card {
+  transition: box-shadow 0.3s ease;
+}
+
+.id-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .footer-box-2 {
-  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.footer-box-3 {
-  background-color: #6bdb20;
+.footer-box-4 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 
-h4 {
-  transform: skew(17deg);
-  padding-left: 5%;
-}
-.grid-container {
-  gap: 0;
-}
+@media (max-width: 930px) {
+    .footer {
+      margin: 2%;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .dynamic-footer {
+      margin: 3% 5%;
+      font-size: 14px;
+    }
+  }
+

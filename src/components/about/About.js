@@ -42,6 +42,17 @@ const About = () => {
         image={Aboutimg}
         altText="About us"
         />
+      <div className="video-container">
+        <iframe 
+        className="about-video" 
+        src="https://www.youtube.com/embed/LDmHtCiKPjU?si=-yG2qksynJAlk76a"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+        </iframe>
+      </div>
         <DynamicTextbox 
           text={Text}
         />

@@ -40,12 +40,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 60px;
-  background-color: #333;
+  background-color: #444;
   color: #fff;
 }
 
 .info-text {
-  font-size: 0.9em;
+  font-size: 1em;
+  letter-spacing: .2em;
 }
 
 .info-phone {
@@ -53,17 +54,28 @@
   align-items: center;
 }
 
-.phone-icon {
-  height: 25px;
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 1em;
+  color: #fff;
+  transition: color 0.3s ease;
   margin-right: 20px;
+}
+
+.social-icon:hover {
+  color: #6bdb20;
 }
 
 .phone-number {
   color: #fff;
   text-decoration: none;
+  margin: 2px;
 }
 
-/* (tablets) */
 @media (max-width: 768px) {
   .navbar {
     height: 50px;
@@ -83,7 +95,6 @@
   }
 }
 
-/* (mobile devices) */
 @media (max-width: 568px) {
   .navbar {
     z-index: 1;

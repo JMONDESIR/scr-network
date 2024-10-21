@@ -20,15 +20,16 @@
 }
 
 .box-1 {
-  background-color: #797979;
+  background-color: #444;
 }
 
 .box-2 {
-  background-color: #333;
+  background-color: #1a1a1a;
 }
 
 .box-3 {
   background-color: #6bdb20;
+  border-radius: 0 0 12px 0;
 }
 
 .box-title {
@@ -56,17 +57,17 @@
 
   .box-2 {
     width: 25vw;
-    margin-left: -65px;
-    transform: skew(-17deg);
+    margin-left: -70px;
+    transform: skew(-25deg);
   }
 
   .box-3 {
     width: 25vw;
-    transform: skew(-17deg);
+    transform: skew(-25deg);
   }
 
   .box-2 > *, .box-3 > * {
-    transform: skew(17deg);
+    transform: skew(25deg);
   }
 }
 

@@ -2,7 +2,8 @@ import React from 'react';
 import Banner from '../banner/Banner.js'
 import ClientImg from '../../assets/client.jpg'
 import DynamicTextbox from '../dynamicTextbox/DynamicTextbox.js';
-import './Client.css'
+import { Link } from 'react-router-dom';
+import './Clients.css';
 
 const Clients = () => {
   const Text=
@@ -18,11 +19,13 @@ const Clients = () => {
     <div>
       <Banner title="Clients" image={ClientImg} altText="Client Area" />
       <div className="button-container">
-        <button 
-          className="remote-button" 
-          onClick={() => window.location.href = "https://www.898.tv/h3gj5m3"}>
-          Remote Support
-        </button>
+        <div onClick={() => window.location.href = "https://www.898.tv/h3gj5m3"}>
+          <button className='remote-button'>Remote Support</button>
+        </div>
+        <div>
+          <Link to="/Downloads"><button className='remote-button'>Downloads</button></Link>
+        </div>
+
       </div>
       <DynamicTextbox text={Text} />
 

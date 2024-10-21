@@ -1,56 +1,92 @@
 .services-container {
+  width: 100%;
+  height: 100%;
   margin-top: 50px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
   padding: 20px;
+  gap: 1.6em;
 }
 
 .service-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 .service-tile {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 100px;
-  transform: skew(-17deg);
+  width: 110px;
+  height: 110px;
+  transform: skew(-25deg);
   border-radius: 12px 2px;
-  background-color: #6bdb206a;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #b0f280;
+  background: linear-gradient(to bottom, rgba(176,242,128,1) 0%, rgba(186,230,154,1) 40%, rgba(107,219,32,1) 51%, rgba(115,194,58,1) 71%, rgba(107,219,32,1) 100%);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.256);
+  transition: all 0.3s ease;
+  padding: 10px;
+  position: relative;
 }
 
 .icon {
-  font-size: 40px;
+  font-size: 60px;
   color: white;
-  transform: skew(17deg);
+  transform: skew(25deg);
 }
 
-.service-title {
+.service-tile:hover {
+  background: rgba(255,145,71,1);
+  background: linear-gradient(to bottom, rgba(255,145,71,1) 0%, rgba(255,143,69,1) 40%, rgba(252,102,2,1) 73%, rgba(252,102,2,1) 100%);
+  cursor: pointer;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.407);
+}
+
+.service-tile.expanded {
+  width: 225px;
+  height: 160px;
+  background: rgba(255,145,71,1);
+  background: linear-gradient(to bottom, rgba(255,145,71,1) 0%, rgba(255,143,69,1) 40%, rgba(252,102,2,1) 73%, rgba(252,102,2,1) 100%);
+}
+
+.service-description {
+  width: 100%;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  transform: skew(25deg);
+  color: white;
+  padding: 5px;
+}
+
+.service-name {
+  margin-top: 10px;
+  font-size: 12px;
   font-weight: bold;
   text-align: center;
-  color: #606060;
+  color: #5a5a5aee;
 }
 
 @media (max-width: 768px) {
-  .service-circle {
-    width: 100px;
-    height: 100px;
+  .service-tile {
+    width: 90px;
+    height: 90px;
   }
 
   .icon {
     font-size: 32px;
   }
 
-  .service-title {
-    font-size: 16px;
+  .service-name {
+    font-size: 12px;
+  }
+
+  .service-description {
+    font-size: 12px;
   }
 }

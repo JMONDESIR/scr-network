@@ -3,46 +3,58 @@
   position: relative;
   max-width: 100%;
   height: 100%;
-  position: relative;
 }
 
-.home-img {
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.5;
 }
 
-.mid-box {
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 400px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.321);
+
+}
+
+/*
+.hero-overlay-2 {
+  margin-left: 79.8vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: skew(-25deg);
+}
+*/
+
+.hero-text {
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
   text-align: center;
+  z-index: 2;
 }
 
-.mid-box-polygon {
-  width: 50.4%;
-  height: auto;
-  transform: skew(-17deg);
-  margin-left: 14%;
-  padding: 10% 0px;
-  background-color: rgba(244, 244, 244, 0.475);
-  border-left: solid 1px rgb(199, 199, 199, 0.5);
-}
-
-.about-video {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-.home-video, .home-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .home-video, .home-img {
-    width: 100%;
-    height: auto;
-  }
+.hero-call {
+  color: white;
 }

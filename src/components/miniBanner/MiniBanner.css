@@ -1,81 +1,69 @@
-.banner-container {
+.mini-banner-container {
   margin-top: 0;
   width: 100%;
-  height: 400px;
+  height: 100px;
   position: relative;
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
+  background-color: #ececec;
 }
 
-.banner-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center; 
-  opacity: .9;
-  z-index: 0;
-}
-
-.banner-polygon {
+.mini-banner-polygon {
   z-index: -1;
   transform: skew(-25deg);
   margin-left: -9%;
   background: rgb(107, 219, 32);
-  background: linear-gradient(to left, rgba(107, 219, 32, 0.4), rgba(164, 236, 116, 1));
   width: 40.3%;
-  height: 450px;
+  height: 120px;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 0 0 12px 0;
 }
 
-.banner-sm-title {
+.mini-banner-sm-title {
   z-index: 1;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
-  margin: 7vh 7%;
-  font-size: 40px;
-  padding: 20px;
+  margin: 5vh 5%;
+  font-size: 2.5vw;
+  padding: 2vw;
   transform: skew(25deg);
   position: relative;
 }
 
 @media (max-width: 930px) {
-  .banner-container {
-    height: 300px;
+  .mini-banner-container {
+    height: 100px;
   }
 
-  .banner-polygon {
-    height: 300px;
+  .mini-banner-polygon {
+    height: 100px;
     z-index: 1;
     transform: skew(-25deg);
     margin-left: -9%;
   }
 
-  .banner-sm-title {
+  .mini-banner-sm-title {
     margin-top: 4vh;
-    font-size: 30px;
     padding-left: 10%;
     margin-left: 6%;
   }
 }
 
 @media (max-width: 555px) {
-  .banner-container {
-    height: 150px;
+  .mini-banner-container {
+    height: 50px;
   }
 
-  .banner-polygon {
+  .mini-banner-polygon {
     display: none;
   }
 
-  .banner-sm-title {
+  .mini-banner-sm-title {
     margin-top: 4vh;
-    font-size: 24px;
+    font-size: 20px;
     padding-left: 15%;
     margin-left: 6%;
   }

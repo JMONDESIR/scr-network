@@ -6,6 +6,8 @@ import About from './components/about/About';
 import Clients from './components/clients/Clients';
 import Contact from './components/contact/Contact';
 import Home from './components/home/Home';
+import Faq from './components/faq/Faq'
+import Downloads from './components/downloads/Downloads'
 
 import './App.css';
 
@@ -21,6 +23,8 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/clients" element={<Clients />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/downloads" element={<Downloads />} />
           </Routes>
         </div>
       </div>
