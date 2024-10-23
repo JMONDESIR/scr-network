@@ -21,11 +21,11 @@
 }
 
 .banner-polygon {
-  z-index: -1;
+  z-index: 1;
   transform: skew(-25deg);
   margin-left: -9%;
-  background: rgb(107, 219, 32);
-  background: linear-gradient(to left, rgba(107, 219, 32, 0.4), rgba(164, 236, 116, 1));
+  background: rgb(110, 252, 15);
+  background: linear-gradient(to left, rgba(118, 239, 38, 0.837), rgb(124, 239, 48),  rgb(124, 239, 48));
   width: 40.3%;
   height: 450px;
   display: flex;
@@ -42,18 +42,12 @@
   padding: 20px;
   transform: skew(25deg);
   position: relative;
+  text-shadow: -1px -1px 0 #00000005, 1px -1px 0 #00000005, -1px 1px 0 #00000005, 1px 1px 0 #00000005;
 }
 
 @media (max-width: 930px) {
   .banner-container {
     height: 300px;
-  }
-
-  .banner-polygon {
-    height: 300px;
-    z-index: 1;
-    transform: skew(-25deg);
-    margin-left: -9%;
   }
 
   .banner-sm-title {
